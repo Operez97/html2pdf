@@ -1759,16 +1759,16 @@ class Html2Pdf
             $inBL[1]-= $border['b']['width'];
         }
 
-        if (!is_array($inTL) || $inTL[0]<=0 || $inTL[1]<=0) {
-            $inTL = null;
+        if ($inTL == NULL || $inTL[0]<=0 || $inTL[1]<=0) {
+            $inTL = NULL;
         }
-        if (!is_array($inTR) || $inTR[0]<=0 || $inTR[1]<=0) {
+        if ($inTR == NULL || $inTR[0]<=0 || $inTR[1]<=0) {
             $inTR = null;
         }
-        if (!is_array($inBR) || $inBR[0]<=0 || $inBR[1]<=0) {
+        if ($inBR == NULL || $inBR[0]<=0 || $inBR[1]<=0) {
             $inBR = null;
         }
-        if (!is_array($inBL) || $inBL[0]<=0 || $inBL[1]<=0) {
+        if ($inBL == NULL || $inBL[0]<=0 || $inBL[1]<=0) {
             $inBL = null;
         }
 
